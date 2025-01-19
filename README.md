@@ -1,6 +1,6 @@
 # Fluid Background Generator: Real-Time Fluid Simulations with Three.js & Angular
 
-![Fluid Background Animation](./Fluid.gif)
+![Fluid Background Animation](https://github.com/alx-mp/fluid-background-angular-threejs/blob/main/public/Fluid.gif?raw=true)
 
 This project creates stunning fluid dynamics backgrounds using real-time simulations powered by [Three.js](https://threejs.org) and was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
 
