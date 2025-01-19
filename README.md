@@ -1,59 +1,77 @@
-# FluidBackgroundApp
+# Fluid Background Generator: Real-Time Fluid Simulations with Three.js & Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
+![Fluid Background Animation](./Fluid.gif)
 
-## Development server
+This project creates stunning fluid dynamics backgrounds using real-time simulations powered by [Three.js](https://threejs.org) and was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.1.
 
-To start a local development server, run:
+The app visualizes fluid motion through shaders, simplex noise, and WebGL render targets to create captivating animated backgrounds.
 
-```bash
-ng serve
-```
+## Features
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- **Real-Time Fluid Simulation**: Powered by custom shaders and physics to simulate fluid-like behavior in the background
+- **Noise-Based Animation**: Smooth, noise-driven motion for an organic, flowing effect
+- **Optimized for Performance**: Uses WebGL and Three.js for hardware-accelerated rendering
+- **Angular Integration**: Built with Angular for easy configuration and scaling
 
-## Code scaffolding
+## Setup & Installation
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Follow these steps to run the project locally:
 
-```bash
-ng generate component component-name
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alx-mp/fluid-background-angular-threejs
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Navigate to the project directory:
+   ```bash
+   cd fluid-background-angular-threejs
+   ```
 
-```bash
-ng generate --help
-```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-## Building
+4. Start the application:
+   ```bash
+   ng serve
+   ```
 
-To build the project run:
+5. Open your browser and navigate to `http://localhost:4200` to see the fluid background in action!
 
-```bash
-ng build
-```
+## Key Code Insights
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### FluidSimulationService
+This is the core of the fluid simulation. It leverages Three.js shaders for fluid advection, divergence, pressure calculation, and rendering.
 
-## Running unit tests
+### Custom Shaders
+The project utilizes custom GLSL shaders (vertexShader, advectionShader, divergenceShader, etc.) to simulate fluid dynamics.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+### Noise Integration
+The movement of the fluid is driven by simplex noise, creating smooth and organic transitions.
 
-```bash
-ng test
-```
+### WebGL Render Targets
+The simulation uses off-screen rendering (render targets) to separate velocity, density, pressure, and divergence calculations.
 
-## Running end-to-end tests
+### Optimization
+The use of requestAnimationFrame and careful management of render targets ensures smooth performance on modern devices.
 
-For end-to-end (e2e) testing, run:
+## How to Contribute
 
-```bash
-ng e2e
-```
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Contributions are always welcome!
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## Donate
 
-## Additional Resources
+If you enjoy the project and would like to support further development, feel free to donate. Your contributions help keep this project alive and evolving.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+I would really appreciate your burger!
+
+<div style="width: 100%;">
+  <a href="https://buymeacoffee.com/alxmp26" target="_blank">
+    <img src="https://raw.githubusercontent.com/alx-mp/deploy-linux-web-server/a41f81f0ecab92fa6820f3a5a9e5408922caec97/assets/button.svg" style="width: 60%;" alt="THANKS!">
+  </a>
+</div>
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
